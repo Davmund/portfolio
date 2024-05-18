@@ -1,0 +1,44 @@
+h1, p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.target {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.on {
+    display: block;
+}
+
+.off{
+    display: none;
+}
+
+.modalN {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 60vh;
+    margin: 4vh auto auto auto;
+    padding: 12px;
+    position: relative;
+    width: 60vw;
+}
+
+.cierre {
+    box-sizing: ;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}

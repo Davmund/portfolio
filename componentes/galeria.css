@@ -1,0 +1,29 @@
+.slideMain {
+    /*border: solid 1px #cccccc;*/
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 50vw;
+}
+
+.tira {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    position: relative;
+    transition: all ease-in-out 0.7s;
+    width: 100%;
+}
+
+.slide_imagen {
+    background-position: center;
+    background-size: contain;
+    display: block;
+    flex-grow: 1;
+    height: 100%;
+    left: 0;
+    transition: all linear 0.2s;
+    min-width: 50vw;
+}
