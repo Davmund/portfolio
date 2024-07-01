@@ -1,0 +1,12 @@
+.formEditer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.formediter_bloque{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

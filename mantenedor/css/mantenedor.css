@@ -1,0 +1,217 @@
+@import '../componentes/formularioExp_Ed/estilo_form_editer.css';
+@import '../componentes/toast/toast.css';
+@import '../componentes/confirmacion/confirma.css';
+@import '../componentes/botones.css';
+@import '../Experiencia/estilos/estilosEditor.css';
+@import '../Experiencia/estilos/estilosForm.css';
+@import 'login.css';
+:root {
+    --primery-background-color1: #dadada;
+
+    
+}
+
+body{
+    color: #333;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+}
+header {
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    font-weight: normal;
+    height: 7vh;
+    width: 100%;
+}
+
+.header_mantenedor{
+    background-color: #333333;
+    color: #fff;
+    padding: 0 20px;
+}
+
+main {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 93vh;
+    margin: 0;
+    width: 100vw;
+}
+menu{
+    background-color: #333;
+    box-sizing: border-box;
+    /* box-shadow: 0 2px 4px rgba(20,20,20,0.5); */
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: stretch;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-decoration: none;
+    width: 25vw;
+    max-width: 200px;
+    z-index: 2;
+}
+.menu{
+    background-color: #5a5a5a;
+    /*border-left: 10px solid #535353;
+    border-top: 1px solid var(--primery-background-color1);*/
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 12px 20px 12px 16px;
+}
+.onm{
+    /*background:linear-gradient(90deg, #333 10px,#333 10px);*/
+}
+.offm{
+    background:#333;
+}
+.menu_opt {
+    overflow: hidden;
+    transition: all 0.4s;
+    width: 100%;
+}
+.optionM {
+    align-items: center;
+    background-color: var(--primery-background-color1);
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    justify-content: space-between;
+    padding: 16px 24px;
+    transition: all 0.3s;
+}
+.optionM:hover {
+    background-color: #f3f3f3;
+    color: #333;
+}
+.trgtMain {
+    box-sizing: border-box;
+    display: flex;
+    background-color: var(--primery-background-color1);
+    overflow-y: auto;
+    padding: 32px 3vw;
+    height: 100%;
+    width: 90vw;
+}
+
+h1,h2,h3, h4{
+    margin: 0;
+}
+
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+    margin: 0;
+}
+h3{
+    font-size: 1rem;
+}
+h4{
+    font-weight: normal;
+}
+
+/*estilos formulario*/
+label {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    gap: 8px;
+    /*margin: 20px auto;*/
+    width: 100%;
+}
+
+input, select, option, textarea {
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px rgba(20,20,20,0.5);
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em !important;
+    padding: 12px 8px;
+}
+
+textarea {
+    min-height: 150px;
+}
+::placeholder{
+    color: #a8a8a8;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' -25,
+  'opsz' 20
+}
+
+/* estilos listas*/
+.editorM_lista {
+    background-color: #ffffff;
+    /* box-shadow: 0 1px 2px rgba(20,20,20,0.5); */
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /*gap: 12px;*/
+    padding: 0;
+    width: 100%;
+}
+.fila_proyecto {
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.fila_proyecto:hover {
+    background-color: #333; 
+    box-shadow: 2px 2px 5px rgba(20,20,20,0.5);
+    color: #fff;
+    z-index: 2;
+}
+.fila_proyecto span {
+    padding: 16px 16px;
+    width: 100%;
+}
+
+.editB{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 600px;
+    width: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+    menu{
+        width: 30vw;
+    }
+    .editB{
+        width: 80%;
+    }
+}
+

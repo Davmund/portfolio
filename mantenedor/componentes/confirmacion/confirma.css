@@ -1,0 +1,15 @@
+.form_confirma {
+
+}
+.form_confirma_text {
+
+}
+
+.contenedor_botones {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: end;
+    width: 100%;
+}
+

@@ -1,0 +1,62 @@
+.biografia {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.biografia_img {
+    background-position: center;
+    background-size: contain;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    width: 50%;
+}
+
+.biografia_textos {
+    box-sizing: border-box;
+    background-color: #30344F;
+    color: var(--secondary-text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: end;
+    padding: 40px;
+    width: 50%;
+}
+
+.biografia_nombre {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    line-height: 52px;
+    width: 55%;
+}
+
+.biografia_sobremi {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 55%;
+}
+
+.biografia_sobremi a {
+    border: 1px solid var(--terc-text-color);
+    color: var(--secondary-text-color);
+    cursor: pointer;
+    padding: 8px 12px;
+    transition: all 0.3s;
+    width: fit-content;
+}
+
+.biografia_sobremi a:hover {
+    background-color: var(--terc-text-color);
+    color: var(--secondary-background-color);
+}
+
+.biografia_nombre h2 {
+    color: var(--terc-text-color);
+}

@@ -13,7 +13,7 @@ class Proyecto extends Modal {
     }
 
     armaProyecto(){
-        proy = "<div class='contenedor_text'><h1>"+this.titulo+"</h1><p>"+this.descripcion+"</p></div><div class='img'><img src='"+this.imagen+"' ></div>";
+        proy = "<div class='contenedor_text'><h2>"+this.titulo+"</h2><p>"+this.descripcion+"</p></div><div class='img'><img src='"+this.imagen+"' ></div>";
     }
 }
 

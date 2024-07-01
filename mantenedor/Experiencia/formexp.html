@@ -1,0 +1,40 @@
+<html>
+    <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="Experiencia/estilos/estilosForm.css" type="text/css"/> 
+    </head>
+
+    <div class="editB">
+        <header class="editorH"><h1 id="headerForm"><!--Nueva Experiencia Laboral--></h1></header>
+        <form class="formN" id="formularioExperiencia" accept-charset="utf-8"  enctype="multipart/form-data">
+
+            <input type="hidden" id="tipo" name="tipo" />
+
+            <label id="nuevaL" for="nueva"><!--Cargo ocupado-->
+                <input id="nueva" name="nueva" placeholder="Ej: Diseñador Integrador" type="text" required />
+            </label>
+
+            <label for="institucion"><!--Empleador-->
+                <input type="text" id="institucion" name="institucion"  placeholder="Ingrese la institución." required></input>
+            </label>
+
+            <div class="iniciotermino">
+                <label for="inicio">Inicio 
+                    <input type="month" id="inicio" name="inicio">
+                </label>
+                <label for="termino">Término 
+                    <input type="month" id="termino" name="termino">
+                </label>
+            </div>
+
+            <label for="detalle"><!--Detalle de la experiencia-->
+                <textarea id="detalle" name="detalle"  placeholder="Ingrese la descrición de las funciones" required></textarea>
+            </label>
+
+            <button class="button_primary" id="submitE">Guardar</button>
+        </form>
+    </div>
+</html>
+<!-- Comentado para hacer las prueba de craga en mantenedor 
+<script src="js/ui.js" ></script>
+<script src="js/fetch.js" ></script>-->

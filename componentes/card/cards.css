@@ -1,0 +1,161 @@
+/* .aboutme_card h4,.aboutme_card h5,.aboutme_card p{
+    font-family: Arial, Helvetica, sans-serif;
+} */
+/* .aboutme_card h4 {
+    font-size: 16px;
+}
+.aboutme_card h5 {
+    font-size: 12px;
+    font-weight: normal;
+} */
+.aboutme_card {
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /*max-width: 500px;*/
+    overflow: hidden;
+    width: 100%;
+}
+.aboutme_pointer{
+    background-color: var(--card-background-color2) ;
+    border-radius: 50%;
+    height: 15px;
+    margin-left: 0;
+    position: absolute;
+    margin-top: 28px;
+    width: 15px;
+    z-index: 2;
+}
+.aboutme_line{
+    height:auto;
+    position: relative;
+    border-right: 1px var(--card-background-color2) solid;
+    bottom: 0;
+    width: 7px;
+}
+
+.aboutme_pointer_2{
+    background-color: var(--card-background-color3) ;
+    border-radius: 50%;
+    height: 15px;
+    margin-left: 0;
+    position: absolute;
+    margin-top: 28px;
+    width: 15px;
+    z-index: 2;
+}
+
+.aboutme_line_2{
+    height:auto;
+    position: relative;
+    border-right: 1px var(--card-background-color3) solid;
+    bottom: 0;
+    width: 7px;
+}
+.firstline {
+    background-color: none;
+}
+#educacion .interline {
+    background-color: var(--card-background-color2);
+}
+#experiencia .interline {
+    background-color: var(--card-background-color2);
+}
+.aboutme_card_arrow {
+    box-sizing: border-box;
+    display: none;
+    height: 40px;
+    overflow: hidden;
+    padding-top: 16px;
+    width: 100%;
+    z-index: 1;
+}
+.aboutme_card_left{
+    background-color: var(--card-background-color1);
+    height:40px;
+    transform: rotate(45deg) translateY(-4px) translatex(9px);
+    width: 40px;
+}
+.aboutme_card_block{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 1;
+}
+.aboutme_card_head{
+    background-color: var(--card-background-color1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px 32px;
+    width: 100%;
+}
+.aboutme_card_title{
+    color: var(--secondary-text-color);
+    margin: 0;
+}
+.aboutme_card_subtitle{
+    color: var(--secondary-text-color);
+    margin: 0;
+}
+.aboutme_card_date{
+    margin-left: 4px;
+}
+.aboutme_card_body{
+    background-color: var(--card-background-color2);
+    border: solid 1px var(--card-background-color1);
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box;
+    padding: 16px 32px;
+    width: 100%;
+}
+.aboutme_card_p{
+    color: var(--secondary-text-color);
+    margin: 0;
+}
+
+
+.aboutme_card2 h4,.aboutme_card2 h5,.aboutme_card2 p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aboutme_card2 h4 {
+    font-size: 16px;
+}
+.aboutme_card2 h5 {
+    font-size: 12px;
+    font-weight: normal;
+}
+.aboutme_card2 p {
+    font-size: 14px;
+}
+.aboutme_card_left_2{
+    background-color: var(--card-background-color3);
+    height:40px;
+    transform: rotate(45deg) translateY(-4px) translatex(9px);
+    width: 40px;
+}
+
+.aboutme_card_fecha {
+    color: var(--secondary-Grayblue-200);
+}
+
+.aboutme_card_head_2{
+    background-color: var(--card-background-color3);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px 32px;
+    width: 100%;
+}
+.aboutme_card_body_2{
+    background-color: var(--card-background-color2);
+    border: solid 1px var(--card-background-color3);
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box;
+    padding: 16px 32px;
+    width: 100%;
+}

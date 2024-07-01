@@ -1,0 +1,35 @@
+<!--<!doctype html> --> 
+<html>
+    <head> 
+        <title>MD</title>
+        <meta charset="utf-8"/>
+        <link rel="icon" type="image/jpg" href="favicon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="estilos/estilos.css" type="text/css" />
+    </head>
+
+    <body>
+    <div class="contenedor_creador">
+        <div class="creador_header">
+            <h2>Creador de usuarios davmund.cl</h2>
+            <p>Llena todos los datos para ingresar un nuevo usuario.</p>
+        </div>
+        <form id="creador_form">
+            <div class="creador_mensajes" id="creador_mensajes"></div>
+            <label for="usuario">Usuario
+                <input id="usuario" type="text" name="new_usuario" placeholder="Ej: correo.algo@mail.com" required>
+            </label>
+            <label for="pass">Contraseña
+                <input id="pass" type="password" name="pass" required>
+            </label>
+            <label for="reinsert_pass">Reingresa la contraseña
+                <input id="reinsert_pass" type="password" name="reinsert_pass" required>
+                <span id="msg" class="pass_info">* Las contraseñas deben coincidir.</span>
+            </label>
+            <button id="submit" class="button_primary" disabled>Crear usuario</button>
+        </form>
+    </div>
+    </body>
+</html>
+<script src="js/creaUsuarios_ui.js" ></script>

@@ -6,10 +6,7 @@
         <link rel="icon" type="image/jpg" href="favicon.png"/>
         <title>David Muñoz</title>   
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="estilos.css" type="text/css" />
-        <link rel="stylesheet" href="textos.css" type="text/css" />
-        <link rel="stylesheet" href="biografia.css" type="text/css" />
-        <link rel="stylesheet" href="componentes/galeria.css" type="text/css" />
+        <link rel="stylesheet" href="estilos/estilos.css" type="text/css" />
     </head>
 
     <body>
@@ -17,27 +14,15 @@
 
         <header id="header" class="shadow">
             <div id="logo" class="header_brand logo logoL">
-                <a onclick="vueltaAltop()"><img src="DSR_logo.png">
+                <a id="logoA"><img src="DSR_logo.png">
                 </a>
             </div>
             <div id="menu_options" class="header_menu"></div>
         </header>
+        <!--seccion de carga-->
+        <main id="mainT">
 
-        <div class="biografia">
-            <div id="biografiaImg" class="biografia_img"></div>
-            <div class="biografia_textos">
-                <div class="biografia_nombre"><h2>David Muñoz Trollund</h2></div>
-                <div class="biografia_sobremi">
-                    <p>
-                        Soy una persona con mucho interés en la ilustración, la fotografía, el deporte y las motos. 
-                        También soy Diseñador UX/UI con foco en el usuario, siempre buscando generar valor de cara a las personas y eficiencia para el negocio. 
-                    </p>
-                </div>
-            </div>
-        </div>
-            
-        <div id="central" class="central">
-        </div>
+        </main>
 
         <footer>
             The footer
@@ -45,10 +30,13 @@
     </body>
 
 </html>
-<script src="componentes/galeria.js" ></script>
 <script src="componentes/modal.js" ></script>
 <script src="componentes/projecto.js" ></script>
 <script src="imagenes.js" ></script>
 <script src="codigo.js" ></script>
 <script src="componentes/menu.js" ></script>
 <script src="componentes/secciones.js" ></script>
+<script src="componentes/galeria.js" ></script>
+<script src="componentes/card/card.js" ></script>
+<script src="js/fetchProyectos.js" ></script>
+<script src="js/navegacion.js" ></script>

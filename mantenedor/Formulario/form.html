@@ -1,0 +1,42 @@
+<html>
+    <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="Formulario/estilos/estilosForm.css" type="text/css"/> 
+    </head>
+
+    <body class="formB">
+        <!--form class="formN" action="formulario/carga.php" id="formularioProyecto" method="post" accept-charset="utf-8"  enctype="multipart/form-data"-->
+            <div class="editB">
+                <header><h1>Nuevo Proyecto</h1></header>
+                <form class="formN" id="formularioProyecto" method="post" accept-charset="utf-8"  enctype="multipart/form-data">
+                    <input type="hidden" id="nuevaCatH" name="nuevaCatH" data-selected="" value=false />
+                    <label id="catProy" for="categoriaProyecto">Categoría del proyecto
+                        <select id="categoriaProyecto" name="categoriaProyecto" aria-placeholder="Seleccione categoría" required>
+                            <!--<option value="0">Categoría 1</option>
+                            <option value="1">Categoría 2</option>
+                            <option value="nueva">Nueva categoría</option>-->
+                        </select>
+                    </label>
+                    <label for="nombreProyecto">Nombre del proyecto
+                        <input id="nombreProyecto" name="nombreProyecto" placeholder="Ej: Diseño de logo" type="text" required />
+                    </label>
+                    <label for="descripcionProyecto">Descripción del proyecto 
+                        <textarea id="descripcionProyecto" name="descripcionProyecto"  placeholder="Ingrese una descripción del trabajo realizado." required></textarea>
+                    </label>
+
+                    <div id="imagenes" class="contenedorFiles">
+                        <label for="imagenesProyecto">imágenes
+                            <input id="imagenesProyecto_0" name="imagenesProyecto[]" data-field="file" type="file" multiple />
+                        </label>
+                        <input type="hidden" id="imagenesAll" name="imagenesAll" />
+                    </div>
+
+                    <!--a class="otraImagen" onclick="nuevoImgField()">Agregar otra imagen</a-->
+                    <button class="button_primary" id="submit">Guardar proyecto</button>
+                </form>
+            </div>
+    </body>
+</html>
+<!-- Comentado para hacer las prueba de craga en mantenedor 
+<script src="js/ui.js" ></script>
+<script src="js/fetch.js" ></script>-->

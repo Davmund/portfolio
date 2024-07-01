@@ -1,0 +1,33 @@
+<!--<!doctype html> --> 
+<html>
+    <head> 
+        <title>MD</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+        <link rel="stylesheet" href="Editor/css/estilosEditor.css" type="text/css" />
+        <link rel="stylesheet" href="componentes/modal/modal.css" type="text/css" />
+    </head>
+    <body>
+        <div class="editB">
+            <header class="editorH"><h1>Editar Proyectos</h1></header>
+            <div id="filters" class="editorF">
+                <form class="editorForm">
+                    <label for="categorias">Filtrar proyectos por categoría 
+                        <select id="drpcategoria" name="categorias" required>
+                            <option value="todos">Todos</option>
+                        </select>
+                    </label>
+
+                    <!--a id="butFiltrar" class="butFiltrar">Ordenar</a-->
+                </form>
+            </div>
+            <main id="editorM" class="editorM">
+                <label>Proyectos</label>
+                <div id="editorM_lista" class="editorM_lista">
+
+                </div>
+                
+            </main>
+        </div>
+    </body>
+</html>

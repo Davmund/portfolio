@@ -1,0 +1,27 @@
+.toast_element{
+    position: absolute;
+    border-radius: 4px;
+    box-shadow: 1px 3px 5px rgba(25,25,25,0.3);
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    padding: 12px;
+    right: 0;
+    top: 8vh;
+    transform: translateX(274px);
+    transition: all 0.8s;
+    max-width: 250;
+    z-index: 15;
+}
+
+.error{
+    background-color: #fc9292;
+    border: 1px solid #751b1b ;
+    color: #751b1b;
+}
+
+.ok{
+    background-color: #ccebd5;
+    border: 1px solid #367048;
+    color: #367048;
+}

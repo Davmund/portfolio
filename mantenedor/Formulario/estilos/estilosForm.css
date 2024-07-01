@@ -1,0 +1,50 @@
+body {
+            background-color: #ededed;
+        }
+        .formN {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 100%;
+        }
+        ::placeholder{
+            color: #bdbdbd;
+        }
+
+        .otraImagen {
+            align-self: flex-end;
+            background-color: #fff;
+            border-radius: 6px;
+            border: solid 1px #61A510;
+            color: #61A510;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 0 8px 0;
+            padding: 12px 8px;
+            text-align: center;
+            transition: all 0.3s;
+            width: max-content;
+        }
+
+        .otraImagen:hover {
+            box-shadow: 2px 2px 5px rgba(20,20,20,0.5);
+        }
+
+        textarea {
+            min-height: 100px;
+        }
+
+        .contenedorFiles {
+            align-content: flex-start;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            /*width: 50%;*/
+        }
+
+        @media (max-width: 720px) {
+            form {
+                width: auto;
+                margin: 32px 16px;
+            }
+        }

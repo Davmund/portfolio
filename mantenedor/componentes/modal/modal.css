@@ -1,0 +1,69 @@
+.modal_fondo {
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
+    display: flex;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s linear;
+    width: 100%;
+    z-index: 10;
+}
+.modal_interior {
+    background-color: #ededed;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    color:#333;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin: 60px auto;
+    height:max-content;
+    /*max-width: 60vw;*/
+    overflow: hidden;
+    padding: 24px 24px;
+    position: relative;
+    width:30vw;
+}
+
+.modal_cierra {
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    position: absolute;
+    right: 24px;
+    text-align: center;
+    top: 16px;
+    width: 24px;
+    z-index: 2;
+}
+
+.modal_cierra img{
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.formM {
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .modal_interior {
+        width:40vw;
+    }
+}
+@media screen and (max-width: 920px) {
+    .modal_interior {
+        width:60vw;
+    }
+}

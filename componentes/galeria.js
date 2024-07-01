@@ -2,16 +2,23 @@
 const slides = ['ilustraciones/img005.jpg','ilustraciones/img007.jpg','ilustraciones/mina-1_b.jpg'];
 let index = 0;
 
-function transition() {
+let intervalo = setInterval(function(){
     let galeria = document.getElementById("tira");
-    setInterval(function(){
-        let percen = index*-100;
-        galeria.style.transform = "translateX("+percen+"%)";
-            index++;
-        if(index>=slides.length){
-            index=0;
-        }
-    }, 4000);
+    let percen = (index*-100);
+    galeria.style.transform = "translateX("+percen+"%)";
+        index++;
+    if(index>=slides.length){
+        index=0;
+    }
+}, 4000);
+
+function transition() {
+
+    if(stage = 1){
+        intervalo;
+    }else{
+        clearInterval(intervalo)
+    }
 
 }
 function cargaSlide () {
@@ -23,5 +30,6 @@ function cargaSlide () {
         galeria.innerHTML+='<div id="'+i+'" class="slide_imagen" style="background-image:url('+im+')"></div>';
         index=1;
     }
+    index = 1;
     transition();
 }

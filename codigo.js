@@ -40,5 +40,14 @@ window.onscroll = function() {
     }
   };
 
-
-cargaSlide ();
+  document.addEventListener("DOMContentLoaded", function() {
+    /////// event listener para ejecutar menu //////////
+    const menuBoton = document.getElementById("logoA");
+    menuBoton.addEventListener('click', e => {
+        if(stage != 1){
+            stage = 1;
+            cargar('paginas/home.html',iniHome);
+        }
+    },true);
+  /////// event listener para ejecutar menu //////////
+  });

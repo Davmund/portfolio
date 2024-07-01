@@ -1,0 +1,245 @@
+body {
+    background: linear-gradient(0deg, rgba(48,52,79,0.3) 0%, rgba(245,245,245,1) 83%);
+}
+.body_aboutme{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60vw;
+}
+.bloque_aboutme {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    height: 70vh;
+    width: 100%;
+}
+.bloque_aboutme_img{
+    background-image: url('../img/moto_tratada.jpg');
+    background-position: top center;
+    background-size: 177%;
+    height: 100%;
+    width: calc(100%/2);
+}
+
+.section_aboutme {
+    align-items: flex-end;
+    align-self: flex-end;
+    background-color: var(--secondary-background-color);
+    box-sizing: border-box;
+    color: var(--secondary-text-color);
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    height: 100%;
+    padding: 32px;
+    width: 50%;
+}
+.section_aboutme_descripcion {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.section_aboutme_descripcion p {
+    padding-bottom: 8px;
+}
+.section_aboutme_redes {
+    background-color: var(--card-background-color2);
+    border-radius: 4px;
+    color: var(--secondary-text-color);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: calc(100%/4);
+}
+
+.section_quehago_img {
+    display: none;
+    min-height: 120px;
+    height: 20%;
+    width: 100%;
+}
+.section_aboutme_redes h3 {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--card-background-color1);
+    padding: 12px;
+}
+.section_aboutme_redes div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    width: 100%;
+}
+.section_aboutme_redes ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.section_aboutme_redes li{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.section_aboutme_redes p {
+    box-sizing: border-box;
+}
+.section_aboutme_experiencia {
+    box-sizing: border-box;
+    background-color: var(--secondary-Grayblue-500);
+    display: flex;
+    flex-direction: row;
+    /* gap: 32px; */
+    padding: 52px 0;
+    width: 100%;
+}
+.section_aboutme_block {
+    flex-grow: 1;
+    width: 50%;
+}
+.section_aboutme_block h2 {
+    color: var(--secondary-text-color);
+    margin-bottom: 8px;
+    padding: 0 32px;
+}
+.experiencia_bajada{
+    color: var(--secondary-text-color);
+    padding: 0 32px;
+}
+.lineatiempo {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 48px 32px 0 32px;
+}
+
+.section_quehago {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-weight: normal;
+    gap: 4px;
+    height: 80vh;
+}
+.section_quehago section {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.section_quehago_column {
+    box-sizing: border-box;
+    color: var(--secondary-text-color);
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    width: calc(100% /2);
+}
+.section_quehago_head {
+    width: max-content;
+}
+.section_quehago_text {
+    width: 80%;
+}
+
+.section_quehago_column:first-child {
+    align-items: center;
+    background-color: var(--secondary-background-color);
+    justify-content: center;
+}
+.section_quehago_column:nth-child(2) {
+    background-image: url('../img/about/about_2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.section_quehago_column:nth-child(2) div {
+    justify-content: flex-end;
+}
+.section_quehago_column:nth-child(3) {
+    background-image: url('../img/about/about_1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.section_quehago_column:nth-child(3) div {
+    align-items: end;
+    text-align: right;
+}
+.section_quehago_column:nth-child(4) {
+    background-image: url('../img/about/about_3.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+.section_quehago h2{
+    width: max-content;
+}
+
+.section_quehago_column div {
+    background-color: var(--terc-background-color);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+    
+    overflow: hidden;
+    padding: 32px;
+}
+.sub_desc {
+    color: var(--terc-text-color);
+    margin-bottom: 4px;
+}
+.section_quehago_skills {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding-top:16px;
+}
+.section_quehago_column:nth-child(3) .section_quehago_skills {
+    justify-content: right;
+}
+.section_quehago_skills h5 {
+    width: 100%;
+}
+.section_quehago_skills img {
+    height: 32px;
+    width: 32px;
+}
+@media only screen and (min-width: 744px) and (max-width: 1133px){
+    .body_aboutme {
+        width: 100vw;
+    }
+    .section_quehago_column {
+        height: 50vh;
+    }
+    .section_quehago section {
+        height: max-content;
+    }
+    .section_quehago {
+        height: max-content;
+    }
+    .section_aboutme_descripcion {
+        width: 100%;
+    }
+    .bloque_aboutme_img {
+        background-size: cover;
+    }
+}

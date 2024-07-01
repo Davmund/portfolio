@@ -1,0 +1,14 @@
+.formN {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+.iniciotermino{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+textarea {
+    min-height: 100px;
+}
